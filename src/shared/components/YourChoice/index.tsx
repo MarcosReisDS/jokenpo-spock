@@ -1,0 +1,40 @@
+import { FC, useContext } from "react";
+import Contexts, { IContext } from "../../contexts";
+import Scissors from "../Scissors";
+import Paper from "../Paper";
+import Rock from "../Rock";
+import Lizard from "../Lizard";
+import Spock from "../Spock";
+import Pentagon from "../Pentagon";
+import "../YourChoice/style/index.css"
+
+interface IYourChoice { }
+const YourChoice: FC<IYourChoice> = () => {
+
+    const { contexts, handleMyChoice } = useContext(Contexts) as IContext
+
+    return (
+        <div className="your-choice">
+            <div className="pentagon">
+                <Pentagon />
+            </div>
+            <div className="scissors">
+                <Scissors onClick={() => handleMyChoice("scissors", "/batalha")} />
+            </div>
+            <div className="paper-spock-one">
+                <div className="paper-spock-two">
+                    <Spock onClick={() => handleMyChoice("spock", "/batalha")} />
+                    <Paper onClick={() => handleMyChoice("paper", "/batalha")} />
+                </div>
+            </div>
+            <div className="lizard-rock-one">
+                <div className="lizard-rock-two">
+                    <Lizard onClick={() => handleMyChoice("lizard", "/batalha")} />
+                    <Rock onClick={() => handleMyChoice("rock", "/batalha")} />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default YourChoice

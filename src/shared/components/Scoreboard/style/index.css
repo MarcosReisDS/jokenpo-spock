@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.container-scoreboard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container-scoreboard .box-scoreboard {
+    width: 45%;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.container-scoreboard .box-scoreboard .separates-contents-scoreboard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-scoreboard .box-scoreboard .separates-contents-scoreboard .conditions {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-scoreboard .box-scoreboard .separates-contents-scoreboard .scoreboard {
+    width: 120px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-scoreboard .box-scoreboard .separates-contents-scoreboard .scoreboard .score {
+    color: hsl(214, 62%, 45%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.container-scoreboard .box-scoreboard .separates-contents-scoreboard .scoreboard .points {
+    color: hsl(214, 58%, 26%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}

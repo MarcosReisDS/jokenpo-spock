@@ -9,6 +9,7 @@ import Lizard from "../Lizard";
 import Spock from "../Spock";
 import PlayAgain from "../PlayAgain";
 import "../ChoiceBattle/style/index.css";
+import Rules from "../Rules";
 
 interface IChoiceBattle { }
 const ChoiceBattle: FC<IChoiceBattle> = () => {

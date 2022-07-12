@@ -1,0 +1,23 @@
+.container-button {
+    width: 98%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    position: fixed;
+    bottom: 20px;
+}
+
+.container-button .button-rules {
+    padding: 10px 20px;
+
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+
+    font-family: sans-serif;
+
+    cursor: pointer;
+}

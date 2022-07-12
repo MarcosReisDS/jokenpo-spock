@@ -1,3 +1,1 @@
 # jokenpo-spock
-
-teste
